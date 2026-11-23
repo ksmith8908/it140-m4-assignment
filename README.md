@@ -1,17 +1,16 @@
 # it140-m4-assignment
 4-3 Assignment: Pseudocode Revisited
 Start hilow_game
-    DISPLAY Enter the lower bound
-    INPUT lowerBound
-    DISPLAY Enter the upper bound 
-    INPUT upperBound 
+    INPUT the lowerBound number
+    INPUT the upperBound number
+    SET randomNumber as user input
     DISPLAY Great, now guess a number between lowerBound and upperBound
-    WHILE userGuess != randomNumber
-        IF userGuess < randomNumber
+    WHILE playerGuess != randomNumber
+        IF playerGuess < randomNumber
         DISPLAY Nope, too low. 
-        ELSE userGuess > randomNumber 
+        ELSE playerGuess > randomNumber 
         DISPLAY Nope, too high. 
     ENDIF
-        userGuess == randomNumber 
+        playerGuess == randomNumber 
         DISPLAY You got it!
 END hilow_game
