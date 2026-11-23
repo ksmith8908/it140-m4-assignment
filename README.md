@@ -1,15 +1,17 @@
 # it140-m4-assignment
 4-3 Assignment: Pseudocode Revisited
-    # Establish a valid guessing range.
+Start hilow_game
     DISPLAY Enter the lower bound
+    INPUT lowerBound
     DISPLAY Enter the upper bound 
-    TODO: Repeat as needed until the bounds satisfy the requirement.
-
-    # Establish the number the player is trying to guess.
-    TODO: Generate the required random number from the valid range.
-
-    # Play the game.
-    TODO: Obtain and validate a guess using the selected bounds.
-    TODO: Repeat the required game behavior until the correct guess.
-        TODO: Compare a valid guess and provide the required feedback.
-        TODO: Obtain and validate another guess when play continues.
+    INPUT upperBound 
+    DISPLAY Great, now guess a number between lowerBound and upperBound
+    WHILE userGuess != randomNumber
+        IF userGuess < randomNumber
+        DISPLAY Nope, too low. 
+        ELSE userGuess > randomNumber 
+        DISPLAY Nope, too high. 
+    ENDIF
+        userGuess == randomNumber 
+        DISPLAY You got it!
+END hilow_game
